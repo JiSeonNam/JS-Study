@@ -92,6 +92,35 @@ body{
     font-size:20px;
 }
 
+/* toDoList 목록양식 */
+.js-toDoList li{
+    list-style:none;
+}
+
+.js-toDoList li button{
+    background-color: inherit;
+    border:none;
+}
+
+.js-toDoList li button:focus{
+    border:none;
+    outline:none;
+    background-color: inherit;
+}
+
+/* 날씨정보 */
+.js-temp{
+    position:absolute;
+    top:5px;
+    right:5px;
+    padding:10px 20px;
+}
+
+.js-location{
+    position:absolute;
+    top: 40px;
+    right: 15px;
+}
 
 
 

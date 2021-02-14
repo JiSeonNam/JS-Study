@@ -1,8 +1,11 @@
 //현재위치에 있는 날씨 불러오기
-const weather = document.querySelector(".js-weather");
+const temp = document.querySelector(".js-temp");
+const loc = document.querySelector(".js-location");
+
 const COORDS = "coords";
 const API_KEY = "e9061cdbe59f28d8149afc1d389e2ff2";
 
+//위치정보 가져오기
 function getWeather(lat, lon){
     fetch(
         `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
@@ -11,7 +14,8 @@ function getWeather(lat, lon){
     }).then(function(json){
         const temperature = json.main.temp;
         const place = json.name;
-        weather.innerText = `${temperature} @ ${place}`;
+        temp.innerText = `☀ ${temperature}℃`;
+        loc.innerText = `${place}`;
     });
 }
 
