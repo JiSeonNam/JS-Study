@@ -27,7 +27,18 @@ function askForName(){
 function showGreeting(text){
     form.classList.remove(SHOWING_ON);
     greeting.classList.add(SHOWING_ON);
-    greeting.innerText = `Hello ${text}`; 
+    
+    const date = new Date();
+    const hours = date.getHours();
+
+    //아침, 점심, 저녁에 따른 인사말 변경
+    if(hours>0 && hours<12){
+        greeting.innerText = `Good moring, ${text}.`; 
+    }else if(hours>12 && hours<18){
+        greeting.innerText = `Good afternoon, ${text}.`;
+    }else{
+        greeting.innerText = `Good Night, ${text}.`; 
+    }
 }
 
 //localStorage 정보 가져오기

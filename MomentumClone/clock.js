@@ -1,6 +1,6 @@
 const clockContainer = document.querySelector(".js-clock");
 const dayTitle = clockContainer.querySelector("h2");
-const clockTitle = clockContainer.querySelector("h1");
+const clockTitle = clockContainer.querySelector("span");
 
 //현재 시각을 표시하는 함수
 function realTime(){

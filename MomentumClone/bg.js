@@ -6,7 +6,7 @@ const IMG_NUMBER = 3;
 function paintImage(imgNumber){
     //이미지 태그 생성
     //1.객체를 생성해서 만들기
-    //const image = new Image();
+    // const image = new Image();
     //2.element(요소) 생성해서 만들기
     image = document.createElement("img");
     image.src = `images/${imgNumber}.jpg`;

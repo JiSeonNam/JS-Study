@@ -3,26 +3,28 @@
         <meta charset="utf-8">
         <title>Momentum Clone Practice</title>
         <link rel="stylesheet" href="index.css">
+        <script defer src="bg.js"></script>
+        <script defer src="index.js"></script>
+        <script defer src="clock.js"></script>
+        <script defer src="greeting.js"></script>
+        <script defer src="todo.js"></script>
+        <script defer src="weather.js"></script>
     </head>
     <body>
+        <span class="js-weather"></span>
         <div class="js-clock clock">
-            <h1>real Time</h1>
+            <span>real Time</span>
         </div>
         <form class="js-form form">
-            <input type="text" placeholder="What is your nickname?"/>
+            <input type="text" placeholder="What is your name?"/>
         </form>
-        <h2 class="js-greeting greeting"></h2>
-        <form class="js-toDoForm"> 
-            <input type="text" placeholder="Write to do"/>
+        <h1 class="js-greeting greeting"></h1>
+        <form class="js-toDoForm">
+            <h2>What is your focus for today?</h2><br>
+            <input type="text" placeholder="Write here"/>
         </form>
         <ul class="js-toDoList todo">
         </ul>
-        <button>All Clear</button>
-        <script src="index.js"></script>
-        <script src="clock.js"></script>
-        <script src="greeting.js"></script>
-        <script src="todo.js"></script>
-        <script src="bg.js"></script>
     </body>
 
 
