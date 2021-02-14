@@ -1,6 +1,6 @@
 //백그라운드 이미지 불러오기
 const body = document.querySelector("body");
-const IMG_NUMBER = 3;
+const IMG_NUMBER = 17;
 
 //화면에 이미지 불러오는 함수
 function paintImage(imgNumber){
